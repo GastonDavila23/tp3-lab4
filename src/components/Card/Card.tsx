@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './Card.sass'
 const Card = ({
     instrumentoImagen = '',
@@ -29,8 +28,6 @@ const Card = ({
                 )
                 }
                 <p className='card-vendidos'>{instrumentoVendidos} vendidos</p>
-
-                
             </div>
         </div>
     )
