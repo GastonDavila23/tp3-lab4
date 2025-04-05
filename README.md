@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# Proyecto React + TypeScript con entorno de desarrollo Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Crear proyecto
 
-Currently, two official plugins are available:
+- npm create vite@latest [nombre-del-proyecto]
+  - crea la estructura de proyecto react 
+- cd [nombre-del-proyecto]
+  - entra a la carpeta del proyecto
+- npm install
+  - instala las dependencias necesarias 'node_modules'
+- npm run dev
+  - inicia el proyecto en servidor local para ver el desarrollo en tiempo real
+- npm install [nombre-del-paquete]
+  - instalar paquetes, ejemplo: 'npm install sass'
+- npm rm nombre-del-paquete
+  - desinstalar paquete
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Clonar repositorio y ejecutarlo
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- git clone [URL-del-repositorio]
+- cd [nombre-del-repositorio]
+- npm install //instala 'node_modules'
+- npm install sass 
+- npm install react-bootstrsap bootstrap
+- npn install react-router-dom
+- npm run dev
+- ctrl + click en el enlace del servidor
